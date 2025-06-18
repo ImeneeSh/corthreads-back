@@ -20,6 +20,8 @@ public class Utilisateur {
         this.typeHLA = typeHLA;
     }
 
+    public Utilisateur() {}
+
     public String getIdUser() {
         return idUser;
     }
