@@ -20,6 +20,8 @@ public class Demande {
         this.typeHLA=typeHLA;
     }
 
+    public Demande(){}
+
     public String getIdDemande() {
         return idDemande;
     }
