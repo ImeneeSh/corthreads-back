@@ -1,4 +1,4 @@
-package corthreads;
+package models;
 
 public class Matchs {
     private String idMatch ;

@@ -1,4 +1,4 @@
-package corthreads;
+package models;
 
 import java.util.Date;
 

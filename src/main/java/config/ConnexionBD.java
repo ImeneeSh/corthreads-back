@@ -1,10 +1,10 @@
-package corthreads;
+package config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-class ConnexionBD {
+public class ConnexionBD {
     public final static String URL="jdbc:mysql://localhost:3306/corthreads";
     public final static String USER="root";
     public final static String PASSWORD="";

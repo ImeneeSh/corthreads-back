@@ -1,5 +1,7 @@
-package corthreads;
+package repositories;
 
+import config.ConnexionBD;
+import models.Utilisateur;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.Connection;
