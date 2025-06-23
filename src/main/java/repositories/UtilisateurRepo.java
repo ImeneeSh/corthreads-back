@@ -1,12 +1,24 @@
 package repositories;
 
+import dtos.CritereRechercheUtilisateur;
+import dtos.UtilisateurDetails;
 import models.Utilisateur;
 
+import java.util.List;
+
 public interface UtilisateurRepo {
-    //ici , nous allons déclarer les méthodes qu'on utilisera lors de la manipulation des bdd (CRUD)
 
     Utilisateur findUtilisateur (String idUser) ;
-    void inscription (Utilisateur utilisateur) ;
-    void majUtilisateur (String idUser, Utilisateur utilisateurModifie) ;
+    void saveUtilisateur (Utilisateur utilisateur) ;
     void suppUtilisateur (String idUser) ;
+
+    UtilisateurDetails  findUtilisateurDetails(String idUser) ;
+
+    List<Utilisateur> findAllUtilisateur (int page , int pageSize) ;
+    List<Utilisateur> findAllUtilisateur () ;
+
+    List<Utilisateur> rechercherUtilisateur (CritereRechercheUtilisateur critere) ;
+    List<Utilisateur> rechercherUtilisateur (CritereRechercheUtilisateur critere , int page , int pageSize) ;
+
+    boolean verifierMotDePasse(String idUser, String mdpClair) ;
 }
