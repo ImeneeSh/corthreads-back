@@ -61,7 +61,7 @@ public class UtilisateurRepoImpl implements UtilisateurRepo {
 
         String sql = utilisateur.getIdUser() == null ?
                 "INSERT INTO utilisateur (idUser,nomCmpl,wilaya,role,mdp,groupeSang,typeHLA) VALUES (?,?,?,?,?,?,?)" :
-                "UPDATE utilisateur SET comCmpl = ? , wilaya= ? , role= ? , mdp= ? , groupeSang= ? , typeHLA= ? WHERE idUser = ?";
+                "UPDATE utilisateur SET nomCmpl = ? , wilaya= ? , role= ? , mdp= ? , groupeSang= ? , typeHLA= ? WHERE idUser = ?";
 
         try(Connection con = ConnexionBD.getConnexion() ;
         PreparedStatement stmt = con.prepareStatement(sql)){

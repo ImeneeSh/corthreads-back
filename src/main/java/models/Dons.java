@@ -20,6 +20,8 @@ public class Dons {
         this.detailsDons = detailsDons;
     }
 
+    public Dons(){} ;
+
     public String getIdDons() {
         return idDons;
     }
